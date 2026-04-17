@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Vinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">Vinho 24h</div>
+      <nav>
+        <a href="index.html">Voltar ao site</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container about-grid">
+      <div class="about-image">
+        <img id="imagem" src="" alt="">
+      </div>
+
+      <div class="about-text">
+        <h2 id="nome" class="section-title" style="text-align:left;"></h2>
+        <p><strong>Tipo:</strong> <span id="tipo"></span></p>
+        <p><strong>País:</strong> <span id="pais"></span></p>
+        <p><strong>Perfil:</strong> <span id="perfil"></span></p>
+        <p><strong>Aromas:</strong> <span id="aromas"></span></p>
+        <p><strong>Harmonização:</strong> <span id="harmonizacao"></span></p>
+        <p><strong>Dica:</strong> <span id="dica"></span></p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="index.html#contato">Tenho interesse</a>
+          <a class="btn btn-secondary-dark" href="index.html">Voltar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const vinhos = {
+      "alandra": {
+        nome: "Alandra - Esporão",
+        tipo: "Tinto",
+        pais: "Portugal",
+        perfil: "Leve, frutado e fácil de beber.",
+        aromas: "Frutas vermelhas frescas.",
+        harmonizacao: "Massas leves, pizzas, frango, queijos jovens e petiscos.",
+        dica: "Servir levemente resfriado entre 13°C e 15°C.",
+        imagem: "imagens/alandra.jpg"
+      },
+      "reguengos": {
+        nome: "Reguengos Tinto",
+        tipo: "Tinto",
+        pais: "Portugal",
+        perfil: "Médio corpo, intenso e equilibrado.",
+        aromas: "Frutas maduras e leve toque de especiarias.",
+        harmonizacao: "Carnes vermelhas, churrasco, massas com molho encorpado e queijos semicurados.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/reguengos.jpg"
+      },
+      "santola": {
+        nome: "Santola Rosé",
+        tipo: "Rosé",
+        pais: "Portugal",
+        perfil: "Leve, fresco e ligeiramente frisante.",
+        aromas: "Morango e framboesa.",
+        harmonizacao: "Saladas, frutos do mar, sushi, petiscos e pratos leves.",
+        dica: "Servir bem gelado entre 8°C e 10°C.",
+        imagem: "imagens/santola-rose.jpg"
+      },
+      "vina-pena": {
+        nome: "Viña Peña Rosé",
+        tipo: "Rosé",
+        pais: "Espanha",
+        perfil: "Leve, frutado e fácil de beber.",
+        aromas: "Morango, cereja e notas florais.",
+        harmonizacao: "Saladas, peixes, frango, petiscos e massas leves.",
+        dica: "Servir bem gelado entre 8°C e 10°C.",
+        imagem: "imagens/vina-pena-rose.jpg"
+      },
+      "alicia-rose": {
+        nome: "Alicia en el País de las Uvas - Rosé",
+        tipo: "Rosé",
+        pais: "Espanha",
+        perfil: "Leve, aromático e muito refrescante.",
+        aromas: "Morango, framboesa e toque floral.",
+        harmonizacao: "Saladas, peixes leves, tapas, bruschettas, comida oriental e petiscos.",
+        dica: "Servir bem gelado entre 8°C e 10°C.",
+        imagem: "imagens/alicia-rose.jpg"
+      },
+      "alicia-branco": {
+        nome: "Alicia en el País de las Uvas - Branco",
+        tipo: "Branco",
+        pais: "Espanha",
+        perfil: "Leve, fresco e bem fácil de beber.",
+        aromas: "Frutas brancas como maçã e pera, além de cítricos.",
+        harmonizacao: "Saladas, peixes, frutos do mar, tapas e pratos leves.",
+        dica: "Servir bem gelado entre 7°C e 9°C.",
+        imagem: "imagens/alicia-branco.jpg"
+      },
+      "tanggier-brut": {
+        nome: "Espumante Tanggier Brut",
+        tipo: "Espumante",
+        pais: "Espanha",
+        perfil: "Elegante e ideal para celebrações.",
+        aromas: "Aromas leves e refrescantes.",
+        harmonizacao: "Brindes, comemorações, entradas e momentos especiais.",
+        dica: "Servir bem gelado.",
+        imagem: "imagens/tanggier-brut.jpg"
+      },
+      "tanggier-rose": {
+        nome: "Espumante Tanggier Rosé Brut",
+        tipo: "Espumante",
+        pais: "Espanha",
+        perfil: "Leve e sofisticado.",
+        aromas: "Notas delicadas e refrescantes.",
+        harmonizacao: "Brindes, presentes e ocasiões especiais.",
+        dica: "Servir bem gelado.",
+        imagem: "imagens/tanggier-rose-brut.jpg"
+      },
+      "san-nazareno": {
+        nome: "San Nazareno",
+        tipo: "Tinto",
+        pais: "Chile",
+        perfil: "Médio corpo, elegante e frutado.",
+        aromas: "Ameixa, cereja e frutas vermelhas frescas.",
+        harmonizacao: "Carnes vermelhas, massas com molho, queijos e pratos mais robustos.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/san-nazareno.jpg"
+      },
+      "expedicion": {
+        nome: "Expedición Carménère",
+        tipo: "Tinto",
+        pais: "Chile",
+        perfil: "Médio corpo, macio e aromático.",
+        aromas: "Amora, ameixa, pimenta preta e especiarias.",
+        harmonizacao: "Carnes grelhadas, churrasco, massas com molho vermelho, pizzas e queijos semicurados.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/expedicion.jpg"
+      },
+      "downhill": {
+        nome: "Downhill Carménère",
+        tipo: "Tinto",
+        pais: "Chile",
+        perfil: "Médio corpo, frutado e muito macio.",
+        aromas: "Ameixa, amora, leve pimenta e notas herbáceas.",
+        harmonizacao: "Carnes grelhadas, massas ao molho vermelho, hambúrguer, pizzas e queijos semicurados.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/downhill.jpg"
+      },
+      "vinchante": {
+        nome: "Vinchante VIN 266",
+        tipo: "Tinto",
+        pais: "Chile",
+        perfil: "Médio a encorpado, frutado e estruturado.",
+        aromas: "Cassis, ameixa, frutas negras e leve toque de especiarias.",
+        harmonizacao: "Carnes vermelhas, churrasco, assados, massas com molho robusto e queijos curados.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/vinchante.jpg"
+      },
+      "vila-del-nevado": {
+        nome: "Vila del Nevado",
+        tipo: "Tinto",
+        pais: "Argentina",
+        perfil: "Seco, equilibrado, harmonioso e persistente.",
+        aromas: "Frutas maduras como ameixa e amora, com leves toques florais.",
+        harmonizacao: "Carnes vermelhas, pizzas, massas com molho vermelho e queijos.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/vila-del-nevado.jpg"
+      },
+      "silverado": {
+        nome: "Silverado Red Blend",
+        tipo: "Tinto",
+        pais: "Argentina",
+        perfil: "Seco, de corpo médio, com taninos maduros e acidez moderada.",
+        aromas: "Frutas vermelhas e pretas maduras, notas florais e especiarias.",
+        harmonizacao: "Carnes vermelhas, pizzas, massas com molho vermelho e queijos duros.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/silverado.jpg"
+      },
+      "rocas-viejas": {
+        nome: "Rocas Viejas",
+        tipo: "Tinto",
+        pais: "Argentina",
+        perfil: "Médio corpo, frutado e equilibrado.",
+        aromas: "Ameixa, cereja, frutas negras e leve toque de especiarias.",
+        harmonizacao: "Carnes assadas, churrasco, massas com molho vermelho, empanadas, pizzas e queijos semicurados.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/rocas-viejas.jpg"
+      },
+      "los-andes": {
+        nome: "Atardecer de los Andes",
+        tipo: "Tinto",
+        pais: "Argentina",
+        perfil: "Médio corpo, elegante e frutado.",
+        aromas: "Ameixa, cereja escura, especiarias e leve chocolate.",
+        harmonizacao: "Carnes grelhadas, massas ao molho vermelho, queijos semiduros, empanadas e pizzas.",
+        dica: "Servir entre 16°C e 18°C.",
+        imagem: "imagens/los-andes.jpg"
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const vinhoId = params.get("vinho");
+
+    if (vinhos[vinhoId]) {
+      const vinho = vinhos[vinhoId];
+
+      document.getElementById("nome").textContent = vinho.nome;
+      document.getElementById("tipo").textContent = vinho.tipo;
+      document.getElementById("pais").textContent = vinho.pais;
+      document.getElementById("perfil").textContent = vinho.perfil;
+      document.getElementById("aromas").textContent = vinho.aromas;
+      document.getElementById("harmonizacao").textContent = vinho.harmonizacao;
+      document.getElementById("dica").textContent = vinho.dica;
+      document.getElementById("imagem").src = vinho.imagem;
+      document.getElementById("imagem").alt = vinho.nome;
+      document.title = vinho.nome;
+    } else {
+      document.getElementById("nome").textContent = "Vinho não encontrado";
+      document.getElementById("tipo").textContent = "-";
+      document.getElementById("pais").textContent = "-";
+      document.getElementById("perfil").textContent = "As informações deste vinho não foram localizadas.";
+      document.getElementById("aromas").textContent = "-";
+      document.getElementById("harmonizacao").textContent = "-";
+      document.getElementById("dica").textContent = "-";
+      document.getElementById("imagem").src = "imagens/placeholder.jpg";
+      document.getElementById("imagem").alt = "Vinho não encontrado";
+    }
+  </script>
+</body>
+</html>

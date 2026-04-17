@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinho 24h</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Siěmbolo fundo branco.png" type="image/x-icon">
+  
+</head>
+<body>
+
+  <div id="ageGate" class="age-gate">
+    <div class="age-box">
+      <h1>Bem-vindo à Vinho 24h</h1>
+      <p>Você tem 18 anos ou mais?</p>
+      <div class="age-buttons">
+        <button id="btnMaior" class="btn btn-primary">Sim, sou maior de 18</button>
+        <button id="btnMenor" class="btn btn-secondary-dark">Não</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <p id="fraseTopo">Atendimento personalizado para cada ocasião.</p>
+  </div>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">Vinho 24h</div>
+
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <span class="hero-badge">Experiência, praticidade e variedade</span>
+        <h1>Encontre o vinho ideal para cada momento</h1>
+        <p>
+          A Vinho 24h conecta praticidade e atendimento personalizado para tornar
+          a escolha do vinho mais simples, agradável e acessível.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-secondary" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <h2 class="section-title">Sobre a experiência Vinho 24h</h2>
+        <p class="section-subtitle">
+          Uma proposta que une praticidade, orientação e acesso a bons rótulos.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="imagens/sobre.jpg" alt="Experiência com vinhos">
+          </div>
+
+          <div class="about-text">
+            <h3>O que é a Vinho 24h</h3>
+            <p>
+              A Vinho 24h busca tornar o acesso ao vinho mais simples e prático,
+              aproximando o cliente de uma experiência de compra organizada e acessível.
+            </p>
+
+            <p>
+              Com uma seleção variada de rótulos, a proposta é atender diferentes gostos,
+              ocasiões e perfis de consumo, desde momentos cotidianos até celebrações especiais.
+            </p>
+
+            <h3>Nossos valores</h3>
+            <ul class="about-list">
+              <li>Atendimento próximo e humanizado</li>
+              <li>Praticidade na jornada do cliente</li>
+              <li>Qualidade na seleção dos rótulos</li>
+              <li>Experiência simples e acessível</li>
+              <li>Confiança e orientação na escolha</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="catalog" id="catalogo">
+  <div class="container">
+    <h2 class="section-title">Catálogo em destaque</h2>
+    <p class="section-subtitle">
+      Seleção de rótulos organizados para facilitar a navegação do cliente.
+    </p>
+
+    <div class="catalog-grid">
+      <article class="card">
+        <img src="imagens/alandra.jpg" alt="Alandra - Esporão">
+        <div class="card-content">
+          <span class="tag">Tinto • Portugal</span>
+          <h3>Alandra - Esporão</h3>
+          <p>Leve, frutado e fácil de beber.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=alandra">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/reguengos.jpg" alt="Reguengos Tinto">
+        <div class="card-content">
+          <span class="tag">Tinto • Portugal</span>
+          <h3>Reguengos Tinto</h3>
+          <p>Médio corpo, intenso e equilibrado.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=reguengos">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/santola-rose.jpg" alt="Santola Rosé">
+        <div class="card-content">
+          <span class="tag">Rosé • Portugal</span>
+          <h3>Santola Rosé</h3>
+          <p>Leve, fresco e ligeiramente frisante.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=santola">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/vina-pena-rose.jpg" alt="Viña Peña Rosé">
+        <div class="card-content">
+          <span class="tag">Rosé • Espanha</span>
+          <h3>Viña Peña Rosé</h3>
+          <p>Frutado, fresco e equilibrado.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=vina-pena">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/alicia-rose.jpg" alt="Alicia Rosé">
+        <div class="card-content">
+          <span class="tag">Rosé • Espanha</span>
+          <h3>Alicia Rosé</h3>
+          <p>Leve, aromático e refrescante.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=alicia-rose">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/alicia-branco.jpg" alt="Alicia Branco">
+        <div class="card-content">
+          <span class="tag">Branco • Espanha</span>
+          <h3>Alicia Branco</h3>
+          <p>Fresco, leve e fácil de beber.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=alicia-branco">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/tanggier-brut.jpg" alt="Espumante Tanggier Brut">
+        <div class="card-content">
+          <span class="tag">Espumante • Espanha</span>
+          <h3>Tanggier Brut</h3>
+          <p>Elegante e ideal para celebrações.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=tanggier-brut">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/tanggier-rose-brut.jpg" alt="Espumante Tanggier Rosé Brut">
+        <div class="card-content">
+          <span class="tag">Espumante • Espanha</span>
+          <h3>Tanggier Rosé Brut</h3>
+          <p>Leve e sofisticado para momentos especiais.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=tanggier-rose">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/san-nazareno.jpg" alt="San Nazareno">
+        <div class="card-content">
+          <span class="tag">Tinto • Chile</span>
+          <h3>San Nazareno</h3>
+          <p>Médio corpo, elegante e frutado.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=san-nazareno">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/expedicion.jpg" alt="Expedición Carménère">
+        <div class="card-content">
+          <span class="tag">Tinto • Chile</span>
+          <h3>Expedición Carménère</h3>
+          <p>Macio, aromático e muito equilibrado.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=expedicion">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/downhill.jpg" alt="Downhill Carménère">
+        <div class="card-content">
+          <span class="tag">Tinto • Chile</span>
+          <h3>Downhill Carménère</h3>
+          <p>Frutado, macio e com final redondo.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=downhill">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/vinchante.jpg" alt="Vinchante VIN 266">
+        <div class="card-content">
+          <span class="tag">Tinto • Chile</span>
+          <h3>Vinchante VIN 266</h3>
+          <p>Mais estruturado, intenso e persistente.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=vinchante">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/vila-del-nevado.jpg" alt="Vila del Nevado">
+        <div class="card-content">
+          <span class="tag">Tinto • Argentina</span>
+          <h3>Vila del Nevado</h3>
+          <p>Equilibrado, harmonioso e macio.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=vila-del-nevado">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/silverado.jpg" alt="Silverado Red Blend">
+        <div class="card-content">
+          <span class="tag">Tinto • Argentina</span>
+          <h3>Silverado Red Blend</h3>
+          <p>Corpo médio, frutado e persistente.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=silverado">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/rocas-viejas.jpg" alt="Rocas Viejas">
+        <div class="card-content">
+          <span class="tag">Tinto • Argentina</span>
+          <h3>Rocas Viejas</h3>
+          <p>Equilibrado, com frutas negras e especiarias.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=rocas-viejas">Ver mais</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="imagens/los-andes.jpg" alt="Atardecer de los Andes">
+        <div class="card-content">
+          <span class="tag">Tinto • Argentina</span>
+          <h3>Atardecer de los Andes</h3>
+          <p>Elegante, frutado e com final suave.</p>
+          <a class="btn btn-primary" href="vinho.html?vinho=los-andes">Ver mais</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section id="beneficios">
+      <div class="container">
+        <h2 class="section-title">Benefícios de ser um franqueado</h2>
+        <p class="section-subtitle">
+          Uma estrutura pensada para unir praticidade, oportunidade e atendimento.
+        </p>
+
+        <div class="benefits-grid">
+          <div class="benefit">
+            <h3>Modelo prático</h3>
+            <p>Atuação com uma proposta moderna, organizada e acessível ao público.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Marca com proposta forte</h3>
+            <p>Presença visual marcante e foco em experiência diferenciada.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Atendimento próximo</h3>
+            <p>Maior conexão com o cliente e possibilidade de relacionamento contínuo.</p>
+          </div>
+
+          <div class="benefit">
+            <h3>Catálogo variado</h3>
+            <p>Diferentes tipos de rótulos para públicos e ocasiões diversas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <h2 class="section-title">Conheça mais sobre a empresa</h2>
+        <p class="section-subtitle">
+          Vídeo institucional para apresentar a proposta e o modelo de negócio.
+        </p>
+
+        <div class="video-box">
+          <h3>Título do vídeo: Conheça a experiência Vinho 24h</h3>
+          <video controls>
+            <source src="videos/video-vinho24h.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Como funciona</h2>
+        <p class="section-subtitle">
+          Uma jornada simples para apresentar os produtos e facilitar o contato.
+        </p>
+
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Conheça os rótulos</h3>
+            <p>O cliente acessa o site e visualiza os produtos disponíveis.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Entenda a proposta</h3>
+            <p>As informações do site ajudam a compreender a experiência e o funcionamento da empresa.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Entre em contato</h3>
+            <p>O cliente pode falar diretamente pelo WhatsApp ou enviar seus dados pelo formulário.</p>
+          </div>
+        </div>
+
+        <div class="machine-box">
+          <h3>Como funciona a máquina</h3>
+          <p>
+            A proposta da Vinho 24h também se destaca pelo modelo moderno de disponibilização
+            dos produtos, reforçando praticidade, autonomia e inovação na experiência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Perguntas frequentes</h2>
+        <p class="section-subtitle">
+          Respostas rápidas para dúvidas comuns dos clientes.
+        </p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Como funciona o atendimento?</button>
+            <div class="faq-answer">
+              <p>O cliente pode entrar em contato diretamente pelo site para receber orientação e atendimento personalizado.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Quais tipos de vinho estão disponíveis?</button>
+            <div class="faq-answer">
+              <p>O catálogo conta com opções de tintos, rosés, brancos e espumantes, com rótulos de diferentes países.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Posso tirar dúvidas antes de escolher?</button>
+            <div class="faq-answer">
+              <p>Sim. O atendimento foi pensado justamente para orientar o cliente na escolha do vinho ideal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Como posso entrar em contato?</button>
+            <div class="faq-answer">
+              <p>Você pode entrar em contato pelo WhatsApp ou preencher o formulário disponível na seção de contato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+  <div class="container">
+    <h2 class="section-title">Entre em contato</h2>
+    <p class="section-subtitle">
+      Fale com a representante ou envie seus dados para receber atendimento
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-box contact-info-box">
+        <p class="contact-message">
+          Para entrar em contato com a representante<br>
+          clique no botão do whatsapp abaixo
+        </p>
+
+        <a class="btn btn-primary contact-whatsapp-btn" href="https://wa.me/5511999999999" target="_blank">
+          Chamar no Whatsapp
+        </a>
+
+        <p class="contact-email-text">Ou entre em contato pelo email:</p>
+        <a class="contact-email-link" href="mailto:saopaulosp.v24h@gmail.com">
+          saopaulosp.v24h@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-form-box">
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+
+  <label>Nome e Sobrenome</label>
+  <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+  <label>Telefone para contato</label>
+  <input type="text" name="telefone" placeholder="Digite seu telefone DDD + Número" required>
+
+  <label>Email para contato</label>
+  <input type="email" name="email" placeholder="Digite seu email" required>
+
+  <button type="submit" class="btn btn-primary contact-submit-btn">Enviar</button>
+
+  <!-- MENSAGEM -->
+  <p id="formMessage" style="display:none; margin-top:15px; color:green; font-weight:600;">
+    Mensagem enviada com sucesso!
+  </p>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>2026 - Vinho 24h - Direitos Reservados</p>
+  </footer>
+
+  <a href="https://wa.me/message/636OYUI5HBCPG1?src=qr" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
