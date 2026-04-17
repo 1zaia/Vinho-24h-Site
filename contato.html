@@ -1,0 +1,90 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinho 24h</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Siěmbolo fundo branco.png" type="image/x-icon">
+  
+</head>
+<body>
+  <div class="topbar">
+    <p id="fraseTopo">Atendimento personalizado para cada ocasião.</p>
+  </div>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">Vinho 24h</div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  
+<section id="contato" class="contact">
+  <div class="container">
+    <h2 class="section-title">Entre em contato</h2>
+    <p class="section-subtitle">
+      Fale com a representante ou envie seus dados para receber atendimento
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-box contact-info-box">
+        <p class="contact-message">
+          Para entrar em contato com a representante<br>
+          clique no botão do whatsapp abaixo
+        </p>
+
+        <a class="btn btn-primary contact-whatsapp-btn" href="https://wa.me/5511999999999" target="_blank">
+          Chamar no Whatsapp
+        </a>
+
+        <p class="contact-email-text">Ou entre em contato pelo email:</p>
+        <a class="contact-email-link" href="mailto:saopaulosp.v24h@gmail.com">
+          saopaulosp.v24h@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-form-box">
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+
+  <label>Nome e Sobrenome</label>
+  <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+  <label>Telefone para contato</label>
+  <input type="text" name="telefone" placeholder="Digite seu telefone DDD + Número" required>
+
+  <label>Email para contato</label>
+  <input type="email" name="email" placeholder="Digite seu email" required>
+
+  <button type="submit" class="btn btn-primary contact-submit-btn">Enviar</button>
+
+  <!-- MENSAGEM -->
+  <p id="formMessage" style="display:none; margin-top:15px; color:green; font-weight:600;">
+    Mensagem enviada com sucesso!
+  </p>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer>
+    <p>2026 - Vinho 24h - Todos os Direitos Reservados</p>
+  </footer>
+
+  <a href="https://wa.me/message/636OYUI5HBCPG1?src=qr" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
