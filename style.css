@@ -565,3 +565,28 @@ footer {
     padding: 64px 0;
   }
 }
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.filter-btn {
+  border: 1px solid var(--cor-principal);
+  background: var(--cor-branco);
+  color: var(--cor-principal);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--cor-principal);
+  color: var(--cor-branco);
+}
